@@ -20,8 +20,22 @@ namespace Abstract_Planets
             GiantPlanet giantPlanet = new GiantPlanet("Saturn", 120536, 568, "GAS");
             Console.WriteLine(giantPlanet.ToString());
 
+            WaitForAnyKey();
+
             TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet("Earth", 12756, 5.97, true);
             Console.WriteLine(terrestrialPlanet.ToString());
+
+            
+            
         }
-    }
+        /// <summary>
+        /// Create a method to pause driver class and return a key stroke to continue program
+        /// </summary>
+        static void WaitForAnyKey()
+            {
+                Console.Write("Press a key to continue ...\n");
+                Console.ReadKey(true);
+                Console.WriteLine("");
+            }
+    } 
 }
