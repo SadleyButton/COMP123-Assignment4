@@ -7,7 +7,7 @@ using System.Text;
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
 /// Description: This is the Terrestrial Planet Class
-/// Version 0.3 - Implement the HasMoon and Habitable interfaces
+/// Version 0.4 - FIX: Bad copy, correction from HasRing to Habitable
 /// </summary>
 namespace Abstract_Planets
 {
@@ -31,9 +31,9 @@ namespace Abstract_Planets
         /// HasRing method queries the planet RingCount and returns a boolean operator if existing.
         /// </summary>
         /// <returns></returns>
-        public bool HasRing()
+        public bool Habitable()
         {
-            if (RingCount > 0)
+            if (_oxygen == true)
             {
                 return true;
             }
