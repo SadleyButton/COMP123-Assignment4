@@ -7,7 +7,7 @@ using System.Text;
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
 /// Description: This is the Abstract Planet Class
-/// Version 0.3 - Add public properties
+/// Version 0.4 - Add the main planet constructor
 /// </summary>
 namespace Abstract_Planets
 {
@@ -66,6 +66,20 @@ namespace Abstract_Planets
         }
 
         //CONSTRUCTORS  ==========================================================
+
+        /// <summary>
+        /// This is the main constructor for the Planet Class.
+        /// It takes three parameters - name (string), diameter (double), mass (double)
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="diameter"></param>
+        /// <param name="mass"></param>
+        public Planet(string name, double diameter, double mass)
+        {
+            this.Name = name;
+            this.Diameter = diameter;
+            this.Mass = mass;
+        }
 
         //PRIVATE METHODS
 
