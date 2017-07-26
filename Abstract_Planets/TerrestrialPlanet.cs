@@ -7,7 +7,7 @@ using System.Text;
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
 /// Description: This is the Terrestrial Planet Class
-/// Version 0.2 - Add main constructor for the TerrestrialPlanet Class
+/// Version 0.3 - Implement the HasMoon and Habitable interfaces
 /// </summary>
 namespace Abstract_Planets
 {
@@ -27,5 +27,30 @@ namespace Abstract_Planets
         //PRIVATE METHODS
 
         //PUBLIC METHODS
+        /// <summary>
+        /// HasRing method queries the planet RingCount and returns a boolean operator if existing.
+        /// </summary>
+        /// <returns></returns>
+        public bool HasRing()
+        {
+            if (RingCount > 0)
+            {
+                return true;
+            }
+            else return false;
+        }
+
+        /// <summary>
+        /// HasMoon method queries the planet RingCount and returns a boolean operator if existing.
+        /// </summary>
+        /// <returns></returns>
+        public bool HasMoon()
+        {
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else return false;
+        }
     }
 }
