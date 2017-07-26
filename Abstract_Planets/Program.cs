@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
 /// Description: Assignment 4 - Abstract Planets
-/// Version 0.2 - Test Planet Class and output (requires debugging)
+/// Version 0.3 - Create a GiantPlanet and display results
 /// </summary>
 
 namespace Abstract_Planets
@@ -17,7 +17,8 @@ namespace Abstract_Planets
     {
         static void Main(string[] args)
         {
-            //Planet plearth = new Planet(earth, 12756, 5.97);
+            GiantPlanet giantPlanet = new GiantPlanet("Saturn", 120536, 568, "GAS");
+            Console.WriteLine(giantPlanet.ToString());
         }
     }
 }
