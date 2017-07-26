@@ -7,11 +7,11 @@ using System.Text;
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
 /// Description: This is the Terrestrial Planet Class
-/// Version 0.1 - Create the Terrestrial Planet Class extending from the Abstract Planet Class
+/// Version 0.1 - Extended for the implimentation of IHasMoon and IHabitable interfaces
 /// </summary>
 namespace Abstract_Planets
 {
-    public class TerrestrialPlanet : Planet
+    public class TerrestrialPlanet : Planet, IHasMoon, IHabitable
     {
         //PRIVATE INSTANCE VARIABLES
 
