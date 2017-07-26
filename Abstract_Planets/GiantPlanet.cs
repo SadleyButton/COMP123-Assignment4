@@ -12,9 +12,13 @@ using System.Text;
 
 namespace Abstract_Planets
 {
+    /// <summary>
+    /// This is the Giant Planet Class
+    /// </summary>
     public class GiantPlanet : Planet
     {
         //PRIVATE INSTANCE VARIABLES (OR FIELDS)
+        private string _type;
 
         //PRIVATE PROPERTIES
 
