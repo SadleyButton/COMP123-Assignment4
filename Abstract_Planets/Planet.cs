@@ -7,7 +7,7 @@ using System.Text;
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
 /// Description: This is the Abstract Planet Class
-/// Version 0.6 - Edit ToString override method to tab results
+/// Version 0.7 - Edit ToString override method to add units to results
 /// </summary>
 namespace Abstract_Planets
 {
@@ -94,8 +94,8 @@ namespace Abstract_Planets
             return string.Format("=====================================================\n" +
                                  "Planet Information\n" +
                                  "\tName: {0}\n" +
-                                 "\tDiameter: {1}\n" +
-                                 "\tMass: {2}\n" +
+                                 "\tDiameter: {1} km\n" +
+                                 "\tMass: {2} (10^24kg)\n" +
                                  "=====================================================\n"
                                     , Name, Diameter, Mass);
         }
