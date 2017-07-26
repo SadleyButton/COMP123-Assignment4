@@ -7,7 +7,7 @@ using System.Text;
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
 /// Description: This is the Abstract Planet Class
-/// Version 0.4 - Add the main planet constructor
+/// Version 0.5 - Add override ToString for Planet output to screen
 /// </summary>
 namespace Abstract_Planets
 {
@@ -84,5 +84,20 @@ namespace Abstract_Planets
         //PRIVATE METHODS
 
         //PUBLIC METHODS
+
+        /// <summary>
+        /// This is the override ToString method to display the planet base information; name, diameter, and mass.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            return string.Format("=====================================================\n" +
+                                 "Planet Information\n" +
+                                 "Name: {0}\n" +
+                                 "Diameter: {1}\n" +
+                                 "Mass: {2}\n" +
+                                 "=====================================================\n"
+                                    , Name, Diameter, Mass);
+        }
     }
 }
