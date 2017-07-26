@@ -7,7 +7,7 @@ using System.Text;
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
 /// Description: This is the Abstract Planet Class
-/// Version 0.2 - Add private instance variables
+/// Version 0.3 - Add public properties
 /// </summary>
 namespace Abstract_Planets
 {
@@ -23,6 +23,47 @@ namespace Abstract_Planets
         private double _rotationPeriod;
 
         //PUBLIC PROPERTIES
+        public double Diameter
+        {
+            get { return this._diameter; }
+            private set { this._diameter = value; }
+        }
+
+        public double Mass
+        {
+            get { return this._mass; }
+            private set { this._mass = value; }
+        }
+
+        public int MoonCount
+        {
+            get { return this._moonCount; }
+            set { this._moonCount = value; }
+        }
+
+        public string Name
+        {
+            get { return this._name; }
+            private set { this._name = value; }
+        }
+
+        public double OrbitalPeriod
+        {
+            get { return this._orbitalPeriod; }
+            set { this._orbitalPeriod = value; }
+        }
+
+        public int RingCount
+        {
+            get { return this._ringCount; }
+            set { this._ringCount = value; }
+        }
+
+        public double RotationPeriod
+        {
+            get { return this._rotationPeriod; }
+            set { this._rotationPeriod = value; }
+        }
 
         //CONSTRUCTORS  ==========================================================
 
