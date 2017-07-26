@@ -7,8 +7,9 @@ using System.Threading.Tasks;
 /// <summary>
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
+/// GitHub Repo: https://github.com/SadleyButton/COMP123-Assignment4
 /// Description: Assignment 4 - Abstract Planets
-/// Version 0.4 - Create a TerrestrialPlanet and display results
+/// Version 0.5 - Create method to pause program
 /// </summary>
 
 namespace Abstract_Planets
