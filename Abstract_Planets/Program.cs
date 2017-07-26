@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
 /// Description: Assignment 4 - Abstract Planets
-/// Version 0.1 - Inital Documentation and Project Creation
+/// Version 0.2 - Test Planet Class and output (requires debugging)
 /// </summary>
 
 namespace Abstract_Planets
@@ -17,6 +17,7 @@ namespace Abstract_Planets
     {
         static void Main(string[] args)
         {
+            //Planet plearth = new Planet(earth, 12756, 5.97);
         }
     }
 }

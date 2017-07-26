@@ -15,9 +15,9 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Abstract_Planets.GiantPlanet">
-    <Position X="6.25" Y="1.25" Width="1.5" />
+    <Position X="6.25" Y="1.25" Width="5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQAgAAAAAAAAAAgAAAAAQAAAAAAAAA=</HashCode>
       <FileName>GiantPlanet.cs</FileName>
     </TypeIdentifier>
   </Class>
