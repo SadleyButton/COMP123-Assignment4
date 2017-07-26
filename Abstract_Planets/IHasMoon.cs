@@ -7,7 +7,7 @@ using System.Text;
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
 /// Description: This is the IHasMoon interface for Planetary use
-/// Version 0.1 - Created Interface (IHasMoon)
+/// Version 0.2 - Edit Interface (IHasMoon) to hold boolean value
 /// </summary>
 /// 
 namespace Abstract_Planets
@@ -15,6 +15,6 @@ namespace Abstract_Planets
     public interface IHasMoon
     {
         //PUBLIC PROPERTIES
-        bool Moon { get; set; }
+        bool HasMoon();
     }
 }

@@ -7,9 +7,8 @@ using System.Text;
  * Name: Bradley Sutton
  * Date: July 25, 2017
  * Description: This is the Giant Planet Class that extends the Planet Abstract Class
- * Version 0.3 - FIX: Remove private property and directly associate type from constructor
- *             - ADD: public method for HasMoon
- *             - ADD: public method for HasRing
+ * Version 0.4 - Impliment methods IHasMoon and IHasRing to check values and return boolean result to corisponding interfaces.
+ *             - Extended class for IHasMoon and IHasRing interfaces
  */
 
 namespace Abstract_Planets
@@ -17,7 +16,7 @@ namespace Abstract_Planets
     /// <summary>
     /// This is the Giant Planet Class
     /// </summary>
-    public class GiantPlanet : Planet
+    public class GiantPlanet : Planet, IHasMoon, IHasRing
     {
         //PRIVATE INSTANCE VARIABLES (OR FIELDS)
         private string _type;
@@ -34,14 +33,30 @@ namespace Abstract_Planets
         //PRIVATE METHODS
 
         //PUBLIC METHODS
+        /// <summary>
+        /// HasRing method queries the planet RingCount and returns a boolean operator if existing.
+        /// </summary>
+        /// <returns></returns>
         public bool HasRing()
         {
-            throw new System.NotImplementedException();
+            if (RingCount > 0)
+            {
+                return true;
+            }
+            else return  false;
         }
 
+        /// <summary>
+        /// HasMoon method queries the planet RingCount and returns a boolean operator if existing.
+        /// </summary>
+        /// <returns></returns>
         public bool HasMoon()
         {
-            throw new System.NotImplementedException();
+            if (MoonCount > 0)
+            {
+                return true;
+            }
+            else return false;
         }
     }
 }

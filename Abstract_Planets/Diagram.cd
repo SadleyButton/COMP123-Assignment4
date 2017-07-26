@@ -17,9 +17,10 @@
   <Class Name="Abstract_Planets.GiantPlanet">
     <Position X="6.25" Y="1.25" Width="5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAgAAAAAAAAAAgAAAAAQAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAQAgAAAAAAAAAAgAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GiantPlanet.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
