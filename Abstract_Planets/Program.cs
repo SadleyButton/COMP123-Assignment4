@@ -20,15 +20,16 @@ namespace Abstract_Planets
         static void Main(string[] args)
         {
             GiantPlanet giantPlanet = new GiantPlanet("Saturn", 120536, 568, "GAS");
-            Console.WriteLine(giantPlanet.ToString());
+            giantPlanet.AddMoon(3);
+            Console.WriteLine(giantPlanet.ToString() + "\n\tMoon: " + giantPlanet.HasMoon() + "\n");
 
             WaitForAnyKey();
 
             TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet("Earth", 12756, 5.97, true);
-            Console.WriteLine(terrestrialPlanet.ToString());
+            Console.WriteLine(terrestrialPlanet.ToString() + "\n\tMoon: " + terrestrialPlanet.HasMoon() + "\n");
 
-            
-            
+
+
         }
         /// <summary>
         /// Create a method to pause driver class and return a key stroke to continue program

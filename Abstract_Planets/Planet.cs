@@ -9,7 +9,8 @@ using System.Text;
 /// Student Number: 300.280.496
 /// GitHub Repo: https://github.com/SadleyButton/COMP123-Assignment4
 /// Description: This is the Abstract Planet Class
-/// Version 0.7 - Edit ToString override method to add units to results
+/// Version 0.8 - Added AddMoon public method
+///             - Modified ToString method to include moon(s) count and change display to screen
 /// </summary>
 namespace Abstract_Planets
 {
@@ -86,6 +87,10 @@ namespace Abstract_Planets
         //PRIVATE METHODS
 
         //PUBLIC METHODS
+        public void AddMoon(int moonCount)
+        {
+            this.MoonCount = moonCount;
+        }
 
         /// <summary>
         /// This is the override ToString method to display the planet base information; name, diameter, and mass.
@@ -98,8 +103,8 @@ namespace Abstract_Planets
                                  "\tName: {0}\n" +
                                  "\tDiameter: {1} km\n" +
                                  "\tMass: {2} (10^24kg)\n" +
-                                 "=====================================================\n"
-                                    , Name, Diameter, Mass);
+                                 "\tMoon(s): {3}\n"
+                                    , Name, Diameter, Mass, MoonCount);
         }
     }
 }
