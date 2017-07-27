@@ -3,13 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-/*
- * Name: Bradley Sutton
- * Date: July 25, 2017
- * Description: This is the Giant Planet Class that extends the Planet Abstract Class
- * Version 0.4 - Impliment methods IHasMoon and IHasRing to check values and return boolean result to corisponding interfaces.
- *             - Extended class for IHasMoon and IHasRing interfaces
- */
+/// <summary>
+/// Name: Bradley Sutton
+/// Date: July 25, 2017
+/// Student Number: 300.280.496
+/// GitHub Repo: https://github.com/SadleyButton/COMP123-Assignment4
+/// Description: This is the Giant Planet Class that extends the Planet Abstract Class
+/// Version 0.4 - Impliment methods IHasMoon and IHasRing to check values and return boolean result to corisponding interfaces.
+///            - Extended class for IHasMoon and IHasRing interfaces
+/// </summary>
 
 namespace Abstract_Planets
 {

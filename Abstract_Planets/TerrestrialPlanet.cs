@@ -6,6 +6,8 @@ using System.Text;
 /// <summary>
 /// Name: Bradley Sutton
 /// Date: July 25, 2017
+/// Student Number: 300.280.496
+/// GitHub Repo: https://github.com/SadleyButton/COMP123-Assignment4
 /// Description: This is the Terrestrial Planet Class
 /// Version 0.4 - FIX: Bad copy, correction from HasRing to Habitable
 /// </summary>
