@@ -116,7 +116,7 @@ namespace Abstract_Planets
         public override string ToString()
         {
             return string.Format("=====================================================\n" +
-                                 "Planet Information\n" +
+                                 "Planet Information\n\n" +
                                  "\tName: {0}\n" +
                                  "\tDiameter: {1} km\n" +
                                  "\tMass: {2} (10^24kg)\n"

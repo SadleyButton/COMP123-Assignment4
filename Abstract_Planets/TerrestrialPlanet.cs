@@ -5,7 +5,7 @@ using System.Text;
 
 /// <summary>
 /// Name: Bradley Sutton
-/// Date: July 25, 2017
+/// Date: July 27, 2017
 /// Student Number: 300.280.496
 /// GitHub Repo: https://github.com/SadleyButton/COMP123-Assignment4
 /// Description: This is the Terrestrial Planet Class
@@ -65,7 +65,7 @@ namespace Abstract_Planets
             string terrestrialPlanetDetails;
 
             terrestrialPlanetDetails = string.Format("=====================================================\n" +
-                                 "\nPlanet Information\n" +
+                                 "Planet Information\n\n" +
                                  "\tName: {0}\n" +
                                  "\tDiameter: {1} km\n" +
                                  "\tMass: {2} (10^24kg)\n"

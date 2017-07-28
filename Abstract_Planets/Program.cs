@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 /// <summary>
 /// Name: Bradley Sutton
-/// Date: July 25, 2017
+/// Date: July 27, 2017
 /// Student Number: 300.280.496
 /// GitHub Repo: https://github.com/SadleyButton/COMP123-Assignment4
 /// Description: Assignment 4 - Abstract Planets
-/// Version 0.6 - Further testing of TerrestrialPlanet and related output string(s)
+/// Version 0.7 - Refactor output for GiantPlanet(s)
 /// </summary>
 
 namespace Abstract_Planets

@@ -70,7 +70,7 @@ namespace Abstract_Planets
             string giantPlanetDetails;
 
             giantPlanetDetails = string.Format("=====================================================\n" +
-                                 "Planet Information\n" +
+                                 "Planet Information\n\n" +
                                  "\tName: {0}\n" +
                                  "\tDiameter: {1} km\n" +
                                  "\tMass: {2} (10^24kg)\n"
@@ -83,6 +83,8 @@ namespace Abstract_Planets
             giantPlanetDetails += string.Format(OrbitalPeriod > 0 ? "\tOrbital Period: {0} hours\n" : "", OrbitalPeriod);
 
             giantPlanetDetails += string.Format(RotationPeriod > 0 ? "\tRotation Period: {0} days\n" : "", RotationPeriod);
+
+            giantPlanetDetails += string.Format("\n\tThis is a {0} type planet.\n", _type);
 
             return giantPlanetDetails;
         }
