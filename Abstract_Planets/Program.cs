@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 /// Student Number: 300.280.496
 /// GitHub Repo: https://github.com/SadleyButton/COMP123-Assignment4
 /// Description: Assignment 4 - Abstract Planets
-/// Version 0.5 - Create method to pause program
+/// Version 0.6 - Further testing of TerrestrialPlanet and related output string(s)
 /// </summary>
 
 namespace Abstract_Planets
@@ -29,9 +29,21 @@ namespace Abstract_Planets
             WaitForAnyKey();
 
             TerrestrialPlanet terrestrialPlanet = new TerrestrialPlanet("Earth", 12756, 5.97, true);
-            Console.WriteLine(terrestrialPlanet.ToString() + "\n\tMoon: " + terrestrialPlanet.HasMoon() + "\n");
+            terrestrialPlanet.AddMoon(1);
+            terrestrialPlanet.AddOrbitalPeriod(365.2);
+            terrestrialPlanet.AddRotationPeriod(23.9);
+            Console.WriteLine(terrestrialPlanet.ToString());
 
+            WaitForAnyKey();
 
+            TerrestrialPlanet morningStar = new TerrestrialPlanet("Venus", 12104, 4.87, false);
+            terrestrialPlanet.AddMoon(0);
+            Console.WriteLine(morningStar.ToString());
+
+            WaitForAnyKey();
+
+            GiantPlanet gasGiant = new GiantPlanet("Jupiter", 142984, 1898, "GAS");
+            Console.WriteLine(gasGiant.ToString());
 
         }
         /// <summary>
