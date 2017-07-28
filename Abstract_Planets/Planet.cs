@@ -5,12 +5,14 @@ using System.Text;
 
 /// <summary>
 /// Name: Bradley Sutton
-/// Date: July 25, 2017
+/// Date: July 27, 2017
 /// Student Number: 300.280.496
 /// GitHub Repo: https://github.com/SadleyButton/COMP123-Assignment4
 /// Description: This is the Abstract Planet Class
-/// Version 0.8 - Added AddMoon public method
-///             - Modified ToString method to include moon(s) count and change display to screen
+/// Version 0.9 - Refactored the override ToString
+///             - Added the AddRingCount method
+///             - Added the AddOrbitalCount method
+///             - Added the Add RotationPeriod method
 /// </summary>
 namespace Abstract_Planets
 {
@@ -92,6 +94,21 @@ namespace Abstract_Planets
             this.MoonCount = moonCount;
         }
 
+        public void AddRing(int ringCount)
+        {
+            this.RingCount = ringCount;
+        }
+
+        public void AddOrbitalPeriod(double orbitalPeriod)
+        {
+            this.OrbitalPeriod = orbitalPeriod;
+        }
+
+        public void AddRotationPeriod(double rotationPeriod)
+        {
+            this.RotationPeriod = rotationPeriod;
+        }
+
         /// <summary>
         /// This is the override ToString method to display the planet base information; name, diameter, and mass.
         /// </summary>
@@ -102,9 +119,8 @@ namespace Abstract_Planets
                                  "Planet Information\n" +
                                  "\tName: {0}\n" +
                                  "\tDiameter: {1} km\n" +
-                                 "\tMass: {2} (10^24kg)\n" +
-                                 "\tMoon(s): {3}\n"
-                                    , Name, Diameter, Mass, MoonCount);
+                                 "\tMass: {2} (10^24kg)\n"
+                                 , Name, Diameter, Mass);
         }
     }
 }

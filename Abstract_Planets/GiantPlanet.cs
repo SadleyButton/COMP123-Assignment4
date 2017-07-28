@@ -9,8 +9,7 @@ using System.Text;
 /// Student Number: 300.280.496
 /// GitHub Repo: https://github.com/SadleyButton/COMP123-Assignment4
 /// Description: This is the Giant Planet Class that extends the Planet Abstract Class
-/// Version 0.4 - Impliment methods IHasMoon and IHasRing to check values and return boolean result to corisponding interfaces.
-///            - Extended class for IHasMoon and IHasRing interfaces
+/// Version 0.5 - Added the public override ToString method for GiantPlanet details.
 /// </summary>
 
 namespace Abstract_Planets
@@ -59,6 +58,33 @@ namespace Abstract_Planets
                 return true;
             }
             else return false;
+        }
+
+
+        /// <summary>
+        /// This is the public override string for GiantPlanet to include enchanced planet details, if applicable.
+        /// </summary>
+        /// <returns></returns>
+        public override string ToString()
+        {
+            string giantPlanetDetails;
+
+            giantPlanetDetails = string.Format("=====================================================\n" +
+                                 "Planet Information\n" +
+                                 "\tName: {0}\n" +
+                                 "\tDiameter: {1} km\n" +
+                                 "\tMass: {2} (10^24kg)\n"
+                                 , Name, Diameter, Mass);
+
+            giantPlanetDetails += string.Format(HasMoon() == true ? "\tMoon(s): {0}\n" : "", MoonCount);
+
+            giantPlanetDetails += string.Format(HasRing() == true ? "\tRing(s): {0}\n" : "", RingCount);
+
+            giantPlanetDetails += string.Format(OrbitalPeriod > 0 ? "\tOrbital Period: {0} hours\n" : "", OrbitalPeriod);
+
+            giantPlanetDetails += string.Format(RotationPeriod > 0 ? "\tRotation Period: {0} days\n" : "", RotationPeriod);
+
+            return giantPlanetDetails;
         }
     }
 }

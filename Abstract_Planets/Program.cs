@@ -21,7 +21,10 @@ namespace Abstract_Planets
         {
             GiantPlanet giantPlanet = new GiantPlanet("Saturn", 120536, 568, "GAS");
             giantPlanet.AddMoon(3);
-            Console.WriteLine(giantPlanet.ToString() + "\n\tMoon: " + giantPlanet.HasMoon() + "\n");
+            giantPlanet.AddRing(4);
+            giantPlanet.AddOrbitalPeriod(10747);
+            giantPlanet.AddRotationPeriod(10.7);
+            Console.WriteLine(giantPlanet.ToString());
 
             WaitForAnyKey();
 
